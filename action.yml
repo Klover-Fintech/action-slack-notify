@@ -4,6 +4,9 @@ author: 'rtCamp'
 runs:
   using: 'docker'
   image: 'docker://ghcr.io/klover-fintech/action-slack-notify:2.2'
+  credentials:
+    username: ${{ secrets.GHCR_USERNAME }}
+    password: ${{ secrets.GHCR_PASSWORD }}
 branding:
   icon: 'bell'
   color: 'yellow'
